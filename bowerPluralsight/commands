@@ -1,0 +1,37 @@
+- Basics
+bower install (uses bower.json if present)
+bower install lodash
+bower install lodash#2.2.1 (installs certain version of lib)
+bower install lodash --save (adds lodash dependency to "dependencies" of bower.json)
+bower install lodash --save-dev (adds lodash dependency to "devDependencies" of bower.json)
+bower uninstall lodash
+bower uninstall lodash --save (removes lodash dependency from bower.json)
+bower uninstall lodash --production (only installs "dependencies" from bower.json, not the "devDependencies")
+bower prune (uninstalls all installed libs that are not listed in bower.json file and are not a dependency of a dependency listed in bower.json)
+
+optional params:
+    -q: minimizes cli output
+    -s: no cli ouput
+    -V: verbose (this is the default setting)
+    -j: log as json
+
+- Update versions
+bower update (updates all libs)
+bower install lodash (updates to latest version)
+
+- Create bower.json
+bower init
+
+.bowerrc file tells bower where to put bowercomponents
+
+- Etc.
+bower help (the manual)
+
+bower list (lists all libs and their versions currently installed)
+bower info lodash (shows bower.json of lodash + all available versions of lib)
+bower lookup lodash (shows github url of lodash)
+
+bower cache list (lists the deps bower has cached locally)
+bower cache clean (empties local cache)
+
+bower search ang (lists all libs which name contains 'ang')

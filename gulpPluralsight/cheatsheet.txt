@@ -1,0 +1,11 @@
+gulp.task("taskname", ['taskToRun', 'otherTaskToRun'] (this array is an optional param),  function(){
+    return gulp.src('path/to/some/**/*file.js')
+                .pipe(doSomething())
+
+});
+
+gulp.src("path/to/some/**/*file.js", {options: option.yes} (this object is an optional param));
+
+gulp.dest("folder/destination/", {options: option.yes} (this object is an optional param))
+
+gulp.watch("pattern/to/watch/**.*js", {options: option.yes} (this object is an optional param), ["taskname", "othertaskname"], function(callbackEvent){optional.asWell = true;})

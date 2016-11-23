@@ -1,0 +1,28 @@
+{
+  "name": "AAA",
+  "authors": [
+    "Niels Jani <nielsjaniels@gmail.com>"
+  ],
+  "description": "descr",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "umama"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}

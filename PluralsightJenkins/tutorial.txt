@@ -1,0 +1,4 @@
+java -jar warfile.war
+options in cli: --httpPort=1234
+or
+--httpPort=-1 httpsPort=1234

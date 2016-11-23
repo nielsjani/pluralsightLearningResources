@@ -1,0 +1,50 @@
+package.json
+-config file used by npm
+- dependencies marked with "^" (eg: lodash: "^1.5.3") or just an X or * (eg: lodash: "*") will automatically be updated to latest version by npm install
+- dependencies marked with "~" (eg: lodash: "1.5.3") will automatically be updated to latest minor version by npm install (in this case the latest 1.5.x)
+- dependencies without any special characters will stay on the version defined in package.json
+
+npm init
+-wizard to create new package.json
+
+npm install
+npm install packagename
+npm install ../path/to/folder
+npm install http://www.url.com
+- "-g" installs package globally. eg npm install -g gulp allows you to use "gulp" in cli
+npm install packagename@1.2.3
+- installs certain version of dep
+npm install packagename@1.2
+- installs latest 1.2  version of dep
+npm install packagename@">=1.2 <1.5"
+- installs version lower than 1.5 but higher than or equal to 1.2
+npm install packagename --save
+- puts the dependency in package.json dependencies part and installs it
+npm install packagename --save-dev
+- puts the dependency in package.json devDependencies part and installs it
+npm uninstall packagename (--save or --save-dev to remove from package.json)
+npm update (optional : --dev or --prod)
+- updates all dependencies to latest version
+npm list
+- show all installed packages
+- "--depth number" shows installed dependencies and their dependencies up to "number" levels deep
+
+
+npm start
+-looks for a start script defined in package.json -> scripts -> start
+
+npm test
+-looks for a test script defined in package.json -> scripts -> test
+
+npm help someCommand
+- opens browser with documentation about someCommand
+npm help-search someWord
+- shows list of all doc pages related to someWord
+
+npm prune
+- deletes installed deps not defined in package.json
+npm repo dependencyName
+- opens browser at github page of dependency
+
+npm install npm@latest -g
+-update npm itself
